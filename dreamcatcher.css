@@ -1,0 +1,528 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  color: #333 !important;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #007bff !important;
+  text-decoration: underline;
+}
+
+#home {
+  background-image: url('Image/white\ dreamcatcher.jpg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+section {
+  padding: 60px 0;
+}
+
+#about {
+  padding: 50px 0;
+}
+#about {
+  position: relative;
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1); 
+  z-index: -1;
+}
+
+#about h2, 
+#about p {
+  color: #ae8484;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+}
+
+#about img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+#about h2 {
+  font-size: 2.5rem;
+  color:rgb(119, 85, 119);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about .lead {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#about img {
+  max-width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; 
+
+}
+
+#about, #skills, #contact {
+  background-color: rgb(172, 159, 159);
+  padding: 80px 20px;
+}
+
+#about h2, #skills h2, #contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about p, #skills p, #contact p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form .form-label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form .form-control {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form .btn-primary {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+#gallery {
+  padding: 2rem 0; 
+  background-color: #fff; 
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 1.5rem; 
+  color: #333; 
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#gallery .row {
+  margin: 0; 
+}
+
+#gallery .col-md-3 {
+  padding: 0.5rem; 
+}
+
+
+#gallery .img-fluid {
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  width: 100%; 
+  height: auto;
+}
+
+#gallery .img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  #gallery .col-md-3 {
+      margin-bottom: 1rem; 
+  }
+}
+#creation  {
+  display: flex;
+  padding: 2rem 0;
+}
+
+
+#creation .row {
+  display: flex; 
+  align-items: center;
+}
+video {
+  display: block; 
+  max-width: 90%;
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  video {
+      max-width: 100%; 
+  }
+}
+
+#skills {
+  padding: 50px 0; 
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 40px;
+}
+
+#skills h5 {
+  font-size: 1.5rem;
+  
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#skills p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem; 
+  color: black;
+  line-height: 1.6; 
+  letter-spacing: 0.5px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#skills .row {
+  margin-bottom: 30px; 
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: b;
+  line-height: 1.6; 
+  letter-spacing: 0.5px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact .form-group label {
+  font-weight: bold;
+  color: black;
+}
+
+#contact .form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ddd;
+  padding: 10px;
+}
+
+#contact .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#contact .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+#contact .contact-info {
+  margin-top: 30px;
+}
+
+#contact .contact-info h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#contact .contact-info p {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#contact .social-media h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#contact .social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#contact .social-media img {
+  width: 30px;
+}
+
+#contact .map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+#contact .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+  border-radius: 5px;
+}
+
+#contact .accordion .card-header button {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+}
+
+#contact .accordion .card-header button:hover {
+  color: #0056b3;
+}
+
+#contact .accordion .card-body {
+  color: #555;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+  #contact .map-responsive iframe {
+      height: 200px;
+  }
+
+  #contact .social-media img {
+      width: 24px;
+  }
+
+  #contact h2 {
+      font-size: 2rem;
+  }
+
+  #contact p {
+      font-size: 1rem;
+  }
+}
+
+.contact-info {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center; 
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; 
+  margin-bottom: 20px; 
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media img {
+  margin: 0 10px; 
+}
+
+.accordion .btn-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.accordion .btn-link:focus {
+  box-shadow: none;
+}
+
+
+#about,
+#gallery,
+#creation {
+    background-color: rgb(172, 159, 159);  
+    padding: 20px;
+    border-radius: 10px;
+    color: black; 
+    font-weight: bold; 
+}
+
+#about h2,
+#gallery h2,
+#creation h2 {
+    color: #fff;  
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+#about p,
+#gallery p,
+#creation p {
+    color: #fff;  
+}
+
+#about .row,
+#gallery .row,
+#creation .row {
+    margin-bottom: 20px; 
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#about p,
+#collection p,
+#creation p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: black; 
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: wheat;
+}
